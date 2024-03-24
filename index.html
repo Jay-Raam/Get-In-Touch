@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <video autoplay loop muted playsinline id="bgVideo">
+        <source src="./video/m1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="flex-container">
+        <form id="contactForm" class="">
+          <h1 class="text">Get In Touch...</h1>
+          <div class="flex">
+            <label for="name" class="Name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="input-value"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="email" class="Name">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="input-value"
+            />
+          </div>
+          <div class="fle-001">
+            <label for="message" class="Name">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              class="textarea"
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn">Submit Form</button>
+          </div>
+        </form>
+        <div id="successMessage" class="flex-002 hidden">
+          <p>Form submitted successfully!</p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
